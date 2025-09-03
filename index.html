@@ -1,54 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Laundry Wallah - Professional laundry and dry cleaning service offering doorstep pickup, fast delivery, and fresh, clean clothes at affordable prices.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laundry Wallah - Trusted Laundry & Dry Cleaning Service</title>
-    <link rel="stylesheet" href="stye.css">
+    <title>Assignment for DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <h1>🧺🧼 Laundry Wallah</h1>
-                    <span class="tagline">Care for your clothes</span>
-                </div>
-
-                <ul class="navlinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-
-                <div class="username">
-                    <a href="user.html">Username</a>
-                </div>
-            </nav>
+        <div class="head" id="head">
+            <h1 class="heading" id="heading" >Hello</h1>
         </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="container hero-content">
-                <div class="left">
-                    <h2>Your trusted experts in fabric care and freshness!</h2>
-                    <p>Give your clothes the care they deserve with expert laundry services that restore freshness
-                        and softness. Trust our skilled hands to keep your wardrobe looking its best, every wash.
-                    </p>
-                    <a href="submit.html" class="btn">.<p>Book a service today!</p></a>
-                </div>
 
-                <div class="right">
-                    <img src="https://www.shutterstock.com/image-photo/basket-dirty-clothes-detergent-on-600nw-2405848213.jpg"
-                        alt="Illustration of laundry washing machine">
-                </div>
+        <section class="boxes" id="boxes">
+            <div class="box" id="box">
+                <div class="box-1" id="box-1" onclick="boxredClick()">red</div>
+                <div class="box-2" id="box-2" onclick="boxblueClick()">Blue</div>
+                <div class="box-3" id="box-3" onclick="boxgreenClick()">Green</div>
+                <div class="box-4" id="box-4" onclick="boxyellowClick()">Yellow</div>
             </div>
         </section>
-    </main>
-</body>
 
+        <section class="content-input" id="content-input">
+            <div class="content" id="content">
+                <input type="text" class="input-text" id="inputtext" placeholder="Enter your name..."  required>
+                <button class="submit" id="submit" onclick="submitbutton()" > Greet </button>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="logic.js"></script>
+</body>
 </html>
